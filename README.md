@@ -1,12 +1,8 @@
-# C/C++ language support in Atom
-[![macOS Build Status](https://travis-ci.org/atom/language-c.svg?branch=master)](https://travis-ci.org/atom/language-c)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/8oy1hmp4yrij7c32/branch/master?svg=true)](https://ci.appveyor.com/project/Atom/language-c/branch/master)
-[![Dependency Status](https://david-dm.org/atom/language-c.svg)](https://david-dm.org/atom/language-c)
+# Metal shader language support in Atom
 
-Adds syntax highlighting and snippets to C/C++ files in Atom.
+Forked from [atom/language-c](https://github.com/atom/language-c) and make it work with Metal shader files:
 
-Originally [converted](http://flight-manual.atom.io/hacking-atom/sections/converting-from-textmate)
-from the [C TextMate bundle](https://github.com/textmate/c.tmbundle).
-
-Contributions are greatly appreciated. Please fork this repository and open a
-pull request to add snippets, make grammar tweaks, etc.
+ 1. Add types such as `sampler`,  `float4x4`, `access` ...
+ 1. Add special modifiers such as `vertex`, `kernel` ...
+ 1. Add attribute syntax like `[[user(normal)]]`, `[[position]]`...
+ 1. Add operator `as_type` and `array_ref`
